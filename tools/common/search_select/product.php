@@ -1,0 +1,19 @@
+<?php
+$dept_id=$this->GM->GetSpecData('jec_user','jec_dept_id','jec_user_id',$this->ad_id);
+if($word==''){
+	//$_G['main_list']=$this->CM->db->where('isactive','Y')->order_by('name','ASC')->get('jec_product')->result_array();
+	$this->CM->db->where('jec_product.isactive','Y')->order_by('jec_product.name','ASC');
+}else{
+	//$_G['main_list']=$this->CM->db->like('name',$word)->or_like('value',$word)->or_like('specification',$word)->where('isactive','Y')->order_by('name','ASC')->get('jec_product')->result_array();//
+	$this->CM->db->like('jec_product.name',$word)->or_like('jec_product.value',$word)->or_like('jec_product.specification',$word)->where('jec_product.isactive','Y')->order_by('jec_product.name','ASC');
+}
+if(isset($isSelf)&&$isSelf=='Y')://限工作的
+	$this->CM->db->select(array('jec_product.name','jec_product.jec_product_id','jec_product.specification','jec_product.description'));
+	$this->CM->db->from('jec_product');
+	$this->CM->db->join('jec_user','jec_user.jec_user_id=jec_product.createdby','left');	
+	$this->CM->db->where('jec_product.prodtype',9);//有限部門為工作 
+	$_G['main_list']=$this->CM->db->where('jec_user.jec_dept_id',$dept_id)->get()->result_array();//'jec_job'
+else:
+	$_G['main_list']=$this->CM->db->get('jec_product')->result_array();
+endif;
+?>

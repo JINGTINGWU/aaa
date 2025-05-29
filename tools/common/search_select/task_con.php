@@ -1,0 +1,22 @@
+<?php
+//¤£­«ÂÐªº
+$dept_id=$this->GM->GetSpecData('jec_user','jec_dept_id','jec_user_id',$this->ad_id);
+if($word==''){
+	//$_G['main_list']=$this->CM->db->where('isactive','Y')->order_by('name','ASC')->get('jec_task')->result_array();
+	$this->CM->db->where('jec_task.isactive','Y')->order_by('jec_task.name','ASC');
+}else{
+	//$_G['main_list']=$this->CM->db->like('name',$word)->where('isactive','Y')->order_by('name','ASC')->get('jec_task')->result_array();//
+	$this->CM->db->like('jec_task.name',$word)->where('jec_task.isactive','Y')->order_by('jec_task.name','ASC');
+}
+if(isset($isSelf)&&$isSelf=='Y'):
+	$this->CM->db->select(array('jec_task.name','jec_task.jec_task_id'));
+	$this->CM->db->from('jec_task');
+	$this->CM->db->join('jec_user','jec_user.jec_user_id=jec_task.createdby','left');	
+	$_G['main_list']=$this->CM->db->where('jec_user.jec_dept_id',$dept_id)->get()->result_array();//'jec_job'
+else:
+	$_G['main_list']=$this->CM->db->get('jec_task')->result_array();
+endif;
+
+$_G['exist_list']=$this->CM->db->where('jec_projjob_id',$kid)->where('isactive','Y')->get('jec_projtask')->result_array();
+$_G['exist_pdb']=$this->CM->FormatData(array('db'=>$_G['exist_list'],'key'=>'jec_task_id'),'page_db','s_array');
+?>

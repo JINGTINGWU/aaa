@@ -1,0 +1,22 @@
+<?php
+//�����Ъ�
+$dept_id=$this->GM->GetSpecData('jec_user','jec_dept_id','jec_user_id',$this->ad_id);
+if($word==''){
+	//$_G['main_list']=$this->CM->db->where('isactive','Y')->order_by('name','ASC')->get('jec_job')->result_array();
+	$this->CM->db->where('jec_job.isactive','Y')->order_by('jec_job.name','ASC');
+}else{
+	//$_G['main_list']=$this->CM->db->like('name',$word)->where('isactive','Y')->order_by('name','ASC')->get('jec_job')->result_array();//
+	$this->CM->db->like('jec_job.name',$word)->where('jec_job.isactive','Y')->order_by('jec_job.name','ASC');
+}
+if(isset($isSelf)&&$isSelf=='Y'):
+	$this->CM->db->select(array('jec_job.name','jec_job.jec_job_id'));
+	$this->CM->db->from('jec_job');
+	$this->CM->db->join('jec_user','jec_user.jec_user_id=jec_job.createdby','left');	
+	$_G['main_list']=$this->CM->db->where('jec_user.jec_dept_id',$dept_id)->get()->result_array();//'jec_job'
+else:
+	$_G['main_list']=$this->CM->db->get('jec_job')->result_array();
+endif;
+
+$_G['exist_list']=[];
+$_G['exist_pdb']=$this->CM->FormatData(array('db'=>$_G['exist_list'],'key'=>'jec_job_id'),'page_db','s_array');
+?>

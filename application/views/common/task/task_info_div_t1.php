@@ -1,0 +1,51 @@
+<?php
+	//不要煩我啦><
+	$task_data=$this->CM->db->where('jec_task_id',$projt_data['jec_task_id'])->get('jec_task')->result_array();
+	//$task_data=$task_data[0];
+?>
+        	<table class="info-div" cellspacing="1" cellpadding="3" style="height:35px;">
+            	<tr>
+            		<td class="info-title"  width="50">工作項目</td><td><?=$projt_data['taskname']?>，<?=substr($projt_data['startdate'],0,10)?>~<?=substr($projt_data['enddate'],0,10)?>，<?=$projt_data['sales_name']?></td></tr>
+                <!--
+            	<tr>
+            		<td rowspan="2" class="info-title"  width="50">工作項目</td><td>工作名稱：<?=$projt_data['taskname']?></td><td>工作日期：<?=substr($projt_data['startdate'],0,10)?>~<?=substr($projt_data['enddate'],0,10)?></td></td>
+            	</tr>
+                <tr><td>負責人員：<?=$projt_data['sales_name']?></td><td>督導人員：<?=$this->GM->GetSpecData('jec_user','name','jec_user_id',$projt_data['jec_usersuper_id'])?></td></tr>-->
+                <!--
+                <tr>
+                	<td width="50">工作名稱</td>
+                    <td><?=$projt_data['name']?></td>
+                </tr>
+                <tr>
+                	<td>負責人員</td>
+                    <td><?=$projt_data['sales_name']?></td>
+                </tr>
+                <tr>
+                	<td>起始日期</td>
+                    <td><?=substr($projt_data['startdate'],0,10)?></td>
+                </tr>
+                <tr>
+                	<td>結束日期</td>
+                    <td><?=substr($projt_data['enddate'],0,10)?></td>
+                </tr>
+                <tr>
+                	<td>允許延遲</td>
+                    <td><?=$task_data['daydelay']?></td>
+                </tr>
+                <tr>
+                	<td>工作權重</td>
+                    <td><?=$task_data['workweight']?></td>
+                </tr>
+                <tr>
+                	<td>處理原則</td>
+                    <td><?=$task_data['processtype']?></td>
+                </tr>
+                <tr>
+                	<td>確認方式</td>
+                    <td><?=$task_data['confirmtype']?></td>
+                </tr>
+                <tr>
+                	<td>預估成本</td>
+                    <td><?=number_format($projt_data['price'])?></td>
+                </tr>-->
+            </table>

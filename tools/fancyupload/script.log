@@ -1,0 +1,330 @@
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:10 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744731185.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744731185.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpC84B.tmp
+                    [error] => 0
+                    [size] => 112258
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:10 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744746069.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744746069.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpC85B.tmp
+                    [error] => 0
+                    [size] => 108335
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:10 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744691793.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744691793.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpC917.tmp
+                    [error] => 0
+                    [size] => 129725
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:10 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744668861.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744668861.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpC9F3.tmp
+                    [error] => 0
+                    [size] => 113799
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:10 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744621313.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744621313.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpCA9F.tmp
+                    [error] => 0
+                    [size] => 108899
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:11 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744606805.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744606805.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpCB7B.tmp
+                    [error] => 0
+                    [size] => 110597
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:11 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744599813.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744599813.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpCC37.tmp
+                    [error] => 0
+                    [size] => 100345
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:11 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744592297.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744592297.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpCCF3.tmp
+                    [error] => 0
+                    [size] => 109272
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 05:13:11 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744560409.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744560409.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpCDAF.tmp
+                    [error] => 0
+                    [size] => 108495
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 05 Jun 2012 08:40:36 +0200
+    [addr] => ******T-UNA
+    [agent] => Shockwave Flash
+    [get] => Array
+        (
+            [type] => test
+            [kid] => 29
+        )
+
+    [post] => Array
+        (
+            [Filename] => 2011122744606805.JPG
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 2011122744606805.JPG
+                    [type] => application/octet-stream
+                    [tmp_name] => D:\xampp\tmp\phpB0D2.tmp
+                    [error] => 0
+                    [size] => 110597
+                )
+
+        )
+
+)
+
+---

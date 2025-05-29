@@ -1,0 +1,10 @@
+<?php
+//¤£­«ÂÐªº
+if($word==''){
+	$_G['main_list']=$this->CM->db->where('isactive','Y')->order_by('name','ASC')->get('jec_job')->result_array();
+}else{
+	$_G['main_list']=$this->CM->db->like('name',$word)->where('isactive','Y')->order_by('name','ASC')->get('jec_job')->result_array();//
+}
+$_G['exist_list']=$this->CM->db->where('jec_project_id',$kid)->where('isactive','Y')->get('jec_projjob')->result_array();
+$_G['exist_pdb']=$this->CM->FormatData(array('db'=>$_G['exist_list'],'key'=>'jec_job_id'),'page_db','s_array');
+?>
